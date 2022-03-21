@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function count(arr) {
+            let count = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i].indexOf('a') == -1 && arr[i].indexOf('o') == -1 && arr[i].indexOf('e') == -1 && arr[i].indexOf('u') == -1 && arr[i].indexOf('i') == -1 ) {
+                    count = false;
+                    break;
+                } else {
+                    count++;
+                }
+                console.log(count);
+            }
+        }
+        count(["a", "o", "u", "uee"])
+
+    </script>
+</body>
+</html>
